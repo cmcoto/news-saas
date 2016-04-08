@@ -1,0 +1,20 @@
+<div class="col-md-12">
+  <h2>Curated Documents <%= @docs.size %></h2>
+  <% @docs.each do |doc| %>
+    <h3>
+      <%= doc.title %>
+
+      <small><a href= "<%= doc.url %>"><%= doc.url %> </small>
+      <div class="pull-right">
+        <%= link_to edit_doc_path(doc), class: "icon-link" do %>
+          <small><i class="glyphicon glyphicon-cog"></i></small>
+        <% end %>
+        <small><i class="glyphicon glyphicon-plus-sign"></i></small>
+      </div>
+    </h3>
+
+    <ul class="list-group">
+      <li class="list-group-item"> <%= doc.content %></li>
+    </ul>
+  <% end %>
+</div>

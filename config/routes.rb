@@ -12,10 +12,11 @@ end
 
 Timetracker::Application.routes.draw do
 	constraints(SubdomainPresent) do
-		root 'projects#index', as: :subdomain_root
+		root 'docs#index', as: :subdomain_root
 		devise_for :users
 		resources :users, only: :index
 		resources :projects, except: [:show, :destroy]
+		resources :docs, except: [:show, :destroy]
 	end
 
 	constraints(SubdomainBlank) do

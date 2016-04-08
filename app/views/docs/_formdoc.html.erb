@@ -1,0 +1,11 @@
+<%= simple_form_for(@doc,
+                    wrapper_mappings: { boolean: :vertical_boolean }) do |f| %>
+
+  <%= f.input :title %>
+  <%= f.input :content %>
+  <%= f.input :url %>
+
+  
+  
+  <%= f.button :submit, class: 'btn-primary' %>
+<% end %>
