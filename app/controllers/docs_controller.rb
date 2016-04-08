@@ -30,6 +30,15 @@ class DocsController < ApplicationController
 	    end
 	end
 
+	def destroy
+	    @doc = Doc.find(params[:id])
+	    @doc = Doc.destroy
+
+	    flash.notice="Document '#{@doc.title}' was deleted"
+
+	    redirect_to docs_path
+	end
+
 	private
 
 	

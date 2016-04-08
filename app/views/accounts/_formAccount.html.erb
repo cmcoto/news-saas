@@ -1,0 +1,17 @@
+<%= simple_form_for @account do |f| %>
+      <%= f.fields_for :owner do |o| %>
+        <%= o.input :name %>
+        <%= o.input :email %>
+        <%= o.input :password %>
+        <%= o.input :password_confirmation %>
+      <% end %>
+
+      <%= f.input :subdomain do %>
+        <div class="input-group">
+          <%= f.input_field :subdomain, class: 'form-control' %>
+          <span class="input-group-addon">.newsletterSaaS.dev</span>
+        </div>
+      <% end %>
+
+      <%= f.button :submit, class: 'btn-primary' %>
+    <% end %>

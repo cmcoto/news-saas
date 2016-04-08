@@ -1,7 +1,6 @@
 <div class="col-md-12">
-  <h2>Curated Documents <%= @docs.size %></h2>
+  <h2><i class="glyphicon glyphicon-fire"></i>Curated Documents <span class="badge"><%= @docs.size %></span></a></h2>
   <% @docs.each do |doc| %>
-    <h3>
       <%= doc.title %>
 
       <small><a href= "<%= doc.url %>"><%= doc.url %> </small>
@@ -9,7 +8,9 @@
         <%= link_to edit_doc_path(doc), class: "icon-link" do %>
           <small><i class="glyphicon glyphicon-cog"></i></small>
         <% end %>
+        
         <small><i class="glyphicon glyphicon-plus-sign"></i></small>
+        
       </div>
     </h3>
 
