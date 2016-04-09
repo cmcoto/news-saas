@@ -10,6 +10,8 @@
         <% end %>
         
         <small><i class="glyphicon glyphicon-plus-sign"></i></small>
+        <span class="label label-warning"><%= link_to 'Delete', doc_path(:id => doc.id), :method => :delete %></span>
+        <small><i class="glyphicon glyphicon-trash"></i></small>
         
       </div>
     </h3>
@@ -18,4 +20,5 @@
       <li class="list-group-item"> <%= doc.content %></li>
     </ul>
   <% end %>
+
 </div>

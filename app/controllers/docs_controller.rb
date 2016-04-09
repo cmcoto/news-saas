@@ -32,7 +32,7 @@ class DocsController < ApplicationController
 
 	def destroy
 	    @doc = Doc.find(params[:id])
-	    @doc = Doc.destroy
+	    @doc.destroy
 
 	    flash.notice="Document '#{@doc.title}' was deleted"
 
