@@ -6,7 +6,8 @@ require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
-Bundler.require(*Rails.groups)
+#Bundler.require(*Rails.groups)
+Bundler.require(:default, Rails.env)
 
 # config/application.rb
 require 'apartment/elevators/subdomain' # or 'domain' or 'generic'
