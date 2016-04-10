@@ -3,7 +3,7 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 # config/application.rb
-require 'apartment' # or 'domain' or 'generic'
+require 'apartment/elevators/subdomain' # or 'domain' or 'generic'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
