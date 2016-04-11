@@ -21,6 +21,7 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'simple_form'
 gem 'devise'
 gem 'devise_invitable', '~> 1.5.2'
+gem 'apartment'
 
 group :development, :test do 
 	gem 'guard' 
