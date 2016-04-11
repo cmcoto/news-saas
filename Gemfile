@@ -21,7 +21,9 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'simple_form'
 gem 'devise'
 gem 'devise_invitable', '~> 1.5.2'
-gem 'apartment'
+gem 'apartment', github: "influitive/apartment", branch: "development"
+
+
 
 group :development, :test do 
 	gem 'guard' 
@@ -32,7 +34,7 @@ group :development, :test do
 	gem 'factory_girl_rails'
 	gem 'database_cleaner'
 	gem 'shoulda-matchers'
-	gem 'apartment'
+	
 	gem 'letter_opener'
 	gem 'email_spec'
 
